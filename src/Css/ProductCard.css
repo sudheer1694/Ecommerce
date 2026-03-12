@@ -1,0 +1,73 @@
+.card {
+  background: #fff;
+  border: 1px solid #d7deea;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.card h4 {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: #0f1f40;
+}
+
+.card-description {
+  margin: 0;
+  color: #4b5c78;
+  font-size: 12px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-price {
+  margin: 2px 0 0;
+  color: #0b756d;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.card-actions {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.card button {
+  border: 1px solid #d4dbea;
+  background: #eef4ff;
+  color: #1f4fa3;
+  border-radius: 8px;
+  padding: 7px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #dbe6ff;
+}
+
+.card button.wishlist-btn {
+  background: #f4f8ff;
+}

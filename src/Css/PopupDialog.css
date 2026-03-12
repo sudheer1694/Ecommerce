@@ -1,0 +1,18 @@
+.popup {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.popup.success {
+  background: #198754;
+}
+
+.popup.error {
+  background: #dc3545;
+}

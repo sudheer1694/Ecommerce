@@ -1,0 +1,5 @@
+@import "./Signup.css";
+
+.login-container {
+  max-width: 460px;
+}
