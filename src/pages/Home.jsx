@@ -14,7 +14,7 @@ const Home = () => {
 
 const dispatch = useDispatch()
 
-const { products } = useSelector(state => state.products)
+const { products, loading } = useSelector(state => state.products)
 
 const [currentPage,setCurrentPage] = useState(1)
 
@@ -70,7 +70,7 @@ setCurrentPage(1)
 
 <div className="products-section">
 
-<ProductList products={currentProducts}/>
+<ProductList products={currentProducts} loading={loading}/>
 
 <Pagination
 totalProducts={filteredProducts.length}
